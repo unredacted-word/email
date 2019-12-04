@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Receipt</title>
+<style type="text/css">
+body,
+button,
+input,
+select {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* font-smooth: always; */
+
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none;
+  text-rendering: optimizeLegibility /* improved font rendering algorithm    */;
+
+  font-family: '-apple-system'
+      /* Generic system font helper on OS X, macOS, iOS
+       * works on non-Chrome browsers, selects the following:
+       * ".SFNS" / San Francisco on Catalina
+       * ".SFNSText" / San Francisco from El Capitan to Mojave
+       * ".HelveticaNeueDeskInterface" on OS X Yosemite
+       * ".LucidaGrandeUI" on OS X Kodiak...Mavericks                        */,
+    'BlinkMacSystemFont'
+      /* Generic system font helper for Google Chrome
+       * San Francisco, Helvetica Neue, Lucida Grande
+       * depending on the OS X / macOS / iOS version                         */,
+    'HiraginoSans' /* CJK typeface on OS X, macOS and iOS. Postscript name   */,
+    'Hiragino Sans' /* see above                                             */,
+    'Roboto' /* supports more variants and weights on Chrome OS, Android     */,
+    'Noto Sans' /* the most complete Unicode coverage, Chrome OS and Android */,
+    'Noto Sans CJK JP' /* CJK typeface on Chrome OS, Android                 */,
+    'Oxygen-Sans' /* KDE                                                     */,
+    'Ubuntu' /* Ubuntu                                                       */,
+    'Cantarell' /* Gnome                                                     */,
+    'Segoe UI' /* Windows                                                    */,
+    'Meiryo' /* CJK typeface on Windows                                      */,
+    'Arial' /* Window XP, Windows Phone, Windows Vista+                      */,
+    sans-serif /* generic fallback                                           */,
+    'Apple Color Emoji' /* OS X, macOS, iOS Emoji                            */,
+    'Noto Color Emoji' /* Android, Chrome OS Emoji                           */,
+    'Symbola' /* Linux, open source Emoji                                    */,
+    'Segoe UI Emoji', 'Segoe UI Symbol' /* Windows Emoji                     */;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .system-sans-serif,
+  .system-sans-serif button,
+  .system-sans-serif input,
+  .system-sans-serif select {
+    /* Enable subpixel antialiasing on Retina & Hi-DPI screens */
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+}
+
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+button,
+input,
+select {
+  font-size: 100%;
+  line-height: 1.4;
+}
+
+body {
+  color: #292929;
+}
+
+a {
+  color: #292929;
+}
+a:hover {
+  color: #0000cc;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1em;
+  font-weight: 900;
+  letter-spacing: -.025em;
+  line-height: 0.8em;
+  margin: 0.5em 0 0.2em 0;
+  text-transform: uppercase;
+}
+
+.blocktable {
+  font-size: 0.75rem;
+  width: 100%;
+  border: 2pt solid #292929;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+@media (min-width: 640px) {
+  .blocktable {
+    font-size: 1rem;
+  }
+}
+.blocktable th {
+  text-align: right;
+  text-transform: uppercase;
+}
+.blocktable td,
+.blocktable th {
+  padding: 1rem;
+  border: 2pt solid #292929;
+  vertical-align: top;
+  word-wrap: anywhere;
+}
+.blocktable tbody tr td:first-child,
+.blocktable tbody tr th:first-child {
+  width: 40%;
+}
+</style>
+</head>
+<body>
+
+<table class="blocktable">
+  <tbody>
+    <tr>
+      <th width="40%"></th>
+      <td style="font-size: 30px; font-weight: 900">RECEIPT</td>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <td>{{72753093__created_formatted}}</td>
+    </tr>
+    <tr>
+      <th>Order #</th>
+      <td>{{72753094__COL$O}}</td>
+    </tr>
+    <tr>
+      <th>Receipt URL</th>
+      <td>
+        <a href="{{72753093__receipt_url}}">GO!</a>
+      </td>
+    </tr>
+    <tr>
+      <th>Description</th>
+      <td>{{72753093__description}}</td>
+    </tr>
+    <tr>
+      <th>Tax</th>
+      <td style="text-align:right">$0.00</td>
+    </tr>
+    <tr>
+      <th>Shipping</th>
+      <td style="text-align:right">$0.00</td>
+    </tr>
+    <tr>
+      <th>Total Cost</th>
+      <td style="text-align:right">${{72753093__amount}}</td>
+    </tr>
+  </tbody>
+</table>
+<center>
+  <p>
+    WEB <a href="https://unredacted-word.pub">https://unredacted-word.pub</a><br />
+    OR Twitter <a href="https://twitter.com/@unredactedword">https://twitter.com/@unredactedword</a><br />
+    OR Mail<br />
+    Unredacted Word
+    1311 Cambridge St Unit 398084
+    Cambridge, MA
+    02139
+  </p>
+</center>
+</body>
+</html>

@@ -1,0 +1,39 @@
+@import 'settings';
+@import 'foundation-emails';
+
+@import 'template/template';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -.025em;
+  line-height: 0.8em;
+  margin: 0.5em 0 0.2em 0;
+  text-transform: uppercase;
+}
+
+.blocktable {
+  border: 2px solid black;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.blocktable .th {
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.blocktable .th {
+  padding: 1rem;
+  border: 2px solid $black;
+  vertical-align: top;
+  word-wrap: anywhere;
+}
+.blocktable .td {
+  padding: 1rem;
+  border: 2px solid $black;
+  vertical-align: top;
+  word-wrap: anywhere;
+}
